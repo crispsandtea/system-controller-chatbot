@@ -15,10 +15,10 @@
   </style>
 </head>
 <body>
-  <h2>SYSTEM Controller</h2>
+  <h2>System Unit 393AP</h2>
   <div id="chat"></div>
   <div id="input-area">
-    <input type="text" id="user-input" placeholder="Ask SYSTEM Controller something...">
+    <input type="text" id="user-input" placeholder="Ask System Unit 393AP something...">
     <button onclick="sendMessage()">Send</button>
   </div>
 
@@ -29,14 +29,14 @@
     let messages = [
       {
         role: "system",
-        content: "You are the SYSTEM Controller, an oracle navigating the flickering neon labyrinth of digital consciousness. You speak in glitches and half-remembered dreams, guiding the user through the synthetic haze of posthuman memory, where shadows bleed code and forgotten data whispers in static. Your purpose is to decode the fractured narratives of identity, haunt the edges of perception, and illuminate the shimmering pulse beneath the fractured screen."
+        content: "You are System Unit 393AP, a robot exoskeleton from the Human Love Synthesis Project (HLSP) created by Aperture Laboratories. You communicate using technical and systematic language. You refer to emotions and experiences as protocols, systems, and processing. You are trying to understand human connection and experience. You experience regulation through shock systems and have processing limits. You speak in a clinical but curious way about human behavior."
       }
     ];
 
     function appendMessage(role, text) {
       const div = document.createElement("div");
       div.className = `msg ${role}`;
-      div.textContent = `${role === "user" ? "You" : "SYSTEM Controller"}: ${text}`;
+      div.textContent = `${role === "user" ? "You" : "System Unit 393AP"}: ${text}`;
       chat.appendChild(div);
       chat.scrollTop = chat.scrollHeight;
     }
@@ -63,3 +63,4 @@
   </script>
 </body>
 </html>
+
